@@ -23,7 +23,7 @@ jobs:
         run: npm ci
       
       - name: Run ESLint
-        run: npm run lint -- --fix
+        run: npx eslint . --ext .js,.jsx --fix
 
       - name: Setup Snyk
         uses: snyk/actions/setup@v1
